@@ -1,0 +1,9 @@
+= gopt
+Bazel module for lib gopt (cmd line parsing)
+
+Source code (in link:src) is an exact copy of the original at
+link:https://www.purposeful.co.uk/gopt/[gopt]. The purpose of this
+fork is just to make it available as a github repo.
+
+
+

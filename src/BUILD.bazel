@@ -1,0 +1,15 @@
+cc_library(
+    name  = "gopt",
+    linkstatic = True,
+    srcs  = ["gopt.c", "gopt-errors.c"],
+    hdrs  = ["gopt.h"],
+    copts = [
+        "-x", "c",
+        "-O2",
+    ] + select({
+        "@platforms//os:linux": ["-std=gnu11"],
+        "//conditions:default": ["-std=c11"],
+    }),
+    visibility = ["//visibility:public"]
+)
+
