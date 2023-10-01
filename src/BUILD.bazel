@@ -10,6 +10,6 @@ cc_library(
         "@platforms//os:linux": ["-std=gnu11"],
         "//conditions:default": ["-std=c11"],
     }),
+    linkstatic=1,
     visibility = ["//visibility:public"]
 )
-
