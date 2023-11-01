@@ -1,0 +1,10 @@
+cc_library(
+    name  = "gopt",
+    linkstatic = True,
+    srcs  = ["gopt.c", "gopt-errors.c"],
+    hdrs  = ["gopt.h"],
+    includes = ["."],
+    features = ["opt"],
+    copts = ["-x", "c", "-std=c11"],
+    visibility = ["//visibility:public"]
+)
